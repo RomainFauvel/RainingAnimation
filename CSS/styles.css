@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+
+}
+
+header ul{
+	margin-left: 20%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+header li{
+	padding: 10px;
+}
+header li a{
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	text-decoration: none;
+}
+
+header li:hover{
+	color: rgb(8, 3, 36);
+	background: rgba(255, 255, 255, 0.473);
+	border-radius: 15%;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+section{
+	position: relative;
+}
+
+.topPage{
+	height:40vh;
+	background:linear-gradient( rgb(4, 1, 34),rgb(27, 10, 51));
+	
+}
+
+.drop{
+	position: absolute;
+	background: linear-gradient(transparent,rgba(255, 255, 255, 0.432));
+	height: 5%;
+	border-radius: 4px;
+	width: 2px;
+	animation: raining 1.7s ease-in infinite;
+}
+
+@keyframes raining{
+	0%{
+		transform:translateY(-10vh);
+		height: 5%;
+	}
+	100%{
+		transform: translateY(40vh);
+		height: 7%;
+	}
+}
+
+.main{
+	height: 56vh;
+	z-index: 10;
+	background:rgb(138, 132, 98) ;
+}
+
